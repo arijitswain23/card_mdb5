@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mdb5</title>
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <style>
+        div>img
+        {
+            height: 100px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 class="btn btn-primary">Hello</h1>
+    </center>
+    <div class="card">
+        <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+          <img src="{% static 'images/kohli.jpg' %}" class="img-fluid"/>
+          
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Virat Kohli</h5>
+          <p class="card-text">Virat is a loyal player of RCB</p>
+          <a href="https://www.royalchallengers.com/" class="btn btn-primary" data-mdb-ripple-init>Go to RCB</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+          <img src="{% static 'images/ms-dhoni.jpg' %}" class="img-fluid"/>
+          
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">MS Dhoni</h5>
+          <p class="card-text">Dhoni is the luckiest captain of CSK</p>
+          <a href="https://www.chennaisuperkings.com/" class="btn btn-primary" data-mdb-ripple-init>Go to CSK</a>
+        </div>
+      </div>
+
+    <script src="{% static 'js/mdb.es.min.js' %}"></script>
+</body>
+</html>
